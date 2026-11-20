@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - name: Display a message
         run: echo "Hello! My first GitHub Actions workflow is running."
 
